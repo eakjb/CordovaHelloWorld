@@ -12,6 +12,7 @@ message_info "Running bower install..."
 bower install
 
 message_info "Adding platforms..."
+cordova create
 cordova platform add ios
 cordova platform add android
 cordova platform add amazon-fireos
