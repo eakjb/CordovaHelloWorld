@@ -11,14 +11,17 @@ npm install
 message_info "Running bower install..."
 bower install
 
-message_info "Adding platforms..."
+message_info "Running a grunt build..."
+grunt build
+
+
+message_info "Initializing Cordova..."
 cordova create
+
+message_info "Adding platforms..."
 cordova platform add ios
 cordova platform add android
 cordova platform add amazon-fireos
 
 message_info "Installing plugins..."
 cordova plugin add org.apache.cordova.statusbar
-
-message_info "Running a grunt build..."
-grunt build
