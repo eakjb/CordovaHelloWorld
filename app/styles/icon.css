@@ -30,7 +30,9 @@
   font-size: 3rem;
   padding-top: 8px;
 }
-
+.nav-link {
+  height: 64px;
+}
 @media only screen and (min-width: 992px) {
   .nav-brand-text {
     padding-left: 8px !important;
